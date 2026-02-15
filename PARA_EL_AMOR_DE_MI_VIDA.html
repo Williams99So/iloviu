@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para el amor de mi vida ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 30px;
+            animation: float 6s infinite ease-in-out;
+            opacity: 0.6;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        .heart:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; }
+        .heart:nth-child(2) { left: 80%; top: 30%; animation-delay: 1s; }
+        .heart:nth-child(3) { left: 20%; top: 70%; animation-delay: 2s; }
+        .heart:nth-child(4) { left: 85%; top: 60%; animation-delay: 1.5s; }
+        .heart:nth-child(5) { left: 50%; top: 10%; animation-delay: 3s; }
+        .heart:nth-child(6) { left: 15%; top: 45%; animation-delay: 2.5s; }
+        .heart:nth-child(7) { left: 90%; top: 15%; animation-delay: 3.5s; }
+        .heart:nth-child(8) { left: 5%; top: 85%; animation-delay: 1.2s; }
+        .heart:nth-child(9) { left: 45%; top: 80%; animation-delay: 2.8s; }
+        .heart:nth-child(10) { left: 75%; top: 50%; animation-delay: 3.2s; }
+
+        .container {
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 700px;
+            width: 100%;
+            padding: 50px 40px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        h1 {
+            color: #e91e63;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(233, 30, 99, 0.2);
+        }
+
+        .photo-section {
+            margin: 40px 0;
+        }
+
+        .photo-frame {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            margin: 30px auto;
+            position: relative;
+            display: inline-block;
+        }
+
+        .photo-frame::before {
+            content: '❤️';
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            font-size: 35px;
+            z-index: 2;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        .photo-frame::after {
+            content: '❤️';
+            position: absolute;
+            bottom: -15px;
+            right: -15px;
+            font-size: 35px;
+            z-index: 2;
+            animation: heartbeat 1.5s infinite;
+            animation-delay: 0.7s;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.2); }
+            50% { transform: scale(1); }
+        }
+
+        .photo-inner {
+            width: 100%;
+            height: 100%;
+            border: 8px solid #e91e63;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(233, 30, 99, 0.4);
+            background: #f5f5f5;
+            position: relative;
+        }
+
+        .photo-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .message {
+            font-size: 1.15em;
+            color: #555;
+            line-height: 1.9;
+            margin: 30px 0;
+            text-align: justify;
+            padding: 0 10px;
+        }
+
+        .signature {
+            margin-top: 40px;
+            font-size: 1.4em;
+            color: #e91e63;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .hearts-row {
+            font-size: 35px;
+            margin: 25px 0;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+
+        .divider {
+            width: 60%;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #e91e63, transparent);
+            margin: 30px auto;
+        }
+
+        .decorative-hearts {
+            font-size: 25px;
+            margin: 15px 0;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .photo-frame {
+                height: 250px;
+            }
+            .message {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">💖</div>
+    <div class="heart">💕</div>
+    <div class="heart">💗</div>
+    <div class="heart">💝</div>
+    <div class="heart">💘</div>
+    <div class="heart">💓</div>
+    <div class="heart">💞</div>
+    <div class="heart">💗</div>
+    <div class="heart">💕</div>
+    <div class="heart">💖</div>
+
+    <div class="container">
+        <h1>💕 ¡Feliz San Valentín! 💕</h1>
+        
+        <div class="hearts-row">💗 💖 💕 💖 💗</div>
+        
+        <div class="photo-section">
+            <div class="decorative-hearts">✨ 💝 ✨</div>
+            
+            <div class="photo-frame">
+                <div class="photo-inner">
+                    <img src="foto1.jpg" alt="Mi amor 1">
+                </div>
+            </div>
+
+            <div class="divider"></div>
+            <div class="decorative-hearts">💕 ✨ 💕</div>
+
+            <div class="photo-frame">
+                <div class="photo-inner">
+                    <img src="foto2.jpg" alt="Mi amor 2">
+                </div>
+            </div>
+
+            <div class="divider"></div>
+            <div class="decorative-hearts">✨ 💗 ✨</div>
+
+            <div class="photo-frame">
+                <div class="photo-inner">
+                    <img src="foto3.jpg" alt="Mi amor 3">
+                </div>
+            </div>
+            
+            <div class="decorative-hearts">💖 ✨ 💖</div>
+        </div>
+
+        <div class="hearts-row">💘 💝 💗 💕 💖</div>
+
+        <div class="message">
+            Hola mi amor 💕 se que no hemos pasado buenos momentos en estos ultimos dias pero quiero que sepas que estoy haciendo lo posible de poco a poco para poder ser una gran persona para ti 🌹
+            <br><br>
+            Que sepas que te amo y que eres el amor de mi vida 💖 se que es poco de lo que puedo hacer pero quiero que tengas presente que de detallitos en detallitos mostrarte el amor que siento por ti 😊 diria espero que las cosas se solucionen, pero esa no es una opcion si o si se tienen que mejorar y volverte a recordar que te amo mucho ❤️ que ya cuento los dias y el dinero para poder irte a ver como tanto anhelamos 🥺✨
+        </div>
+
+        <div class="decorative-hearts">💕 💖 💗 💘 💝 💞</div>
+        <div class="hearts-row">💗 💕 💖 💗</div>
+
+        <div class="signature">
+            💝 Con todo mi amor 💝<br>
+            Para ti mi cochina hermosa 💗
+        </div>
+        
+        <div class="decorative-hearts">✨ 💕 ✨</div>
+    </div>
+</body>
+</html>
